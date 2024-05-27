@@ -32,7 +32,7 @@
 
 
 
-<section class="hero">
+<section class="hero" style="margin-bottom: 0;">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -62,7 +62,7 @@
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (preprint)</span>
                 </a>
               </span>
                   </a>
@@ -76,11 +76,10 @@
 </section>
 
 
-
 <section class="section">
   <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <img id="overall" width="80%" src="static/images/Comparison.jpg">
+        <img id="overall" width="100%" src="static/images/Comparison.jpg">
       </div>
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -88,14 +87,13 @@
               <h2 class="title is-3">Abstract</h2>
               <div class="content has-text-justified">
                   <p>
-                    Visual grounding is an essential tool that links user-provided text queries with query-specific regions within an image. Despite advancements in visual grounding models, their ability to comprehend complex queries remains limited. To overcome this limitation, we introduce LLM-Optic, an innovative method that utilizes Large Language Models (LLMs) as an optical lens to enhance existing visual grounding models in comprehending complex text queries involving intricate text structures, multiple objects, or object spatial relationships---situations that current models struggle with. LLM-Optic first employs an LLM as a Text Grounder to interpret complex text queries and accurately identify objects the user intends to locate. Then a pre-trained visual grounding model is used to generate candidate bounding boxes given the refined query by the Text Grounder. After that, LLM-Optic annotates the candidate bounding boxes with numerical marks to establish a connection between text and specific image regions, thereby linking two distinct modalities. Finally, it employs a Large Multimodal Model (LMM) as a Visual Grounder to select the marked candidate objects that best correspond to the original text query. Through LLM-Optic, we have achieved universal visual grounding, which allows for the detection of arbitrary objects specified by arbitrary human language input. Importantly, our method achieves this enhancement without requiring additional training or fine-tuning. Extensive experiments across various challenging benchmarks demonstrate that LLM-Optic achieves state-of-the-art zero-shot visual grounding capabilities.
+                    Visual grounding is an essential tool that links user-provided text queries with query-specific regions within an image. Despite advancements in visual grounding models, their ability to comprehend complex queries remains limited. To overcome this limitation, we introduce LLM-Optic, an innovative method that utilizes Large Language Models (LLMs) as an optical lens to enhance existing visual grounding models in comprehending complex text queries involving intricate text structures, multiple objects, or object spatial relationships——situations that current models struggle with. LLM-Optic first employs an LLM as a Text Grounder to interpret complex text queries and accurately identify objects the user intends to locate. Then a pre-trained visual grounding model is used to generate candidate bounding boxes given the refined query by the Text Grounder. After that, LLM-Optic annotates the candidate bounding boxes with numerical marks to establish a connection between text and specific image regions, thereby linking two distinct modalities. Finally, it employs a Large Multimodal Model (LMM) as a Visual Grounder to select the marked candidate objects that best correspond to the original text query. Through LLM-Optic, we have achieved universal visual grounding, which allows for the detection of arbitrary objects specified by arbitrary human language input. Importantly, our method achieves this enhancement without requiring additional training or fine-tuning. Extensive experiments across various challenging benchmarks demonstrate that LLM-Optic achieves state-of-the-art zero-shot visual grounding capabilities.
                   </p>
               </div>
           </div>
       </div>
       <!-- Abstract.-->
 
-      <img id="overall" width="100%" src="static/images/Overview.jpg">
       <!-- Model. -->
       <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
@@ -107,6 +105,7 @@
               </div>
           </div>
       </div>
+      <img id="overall" width="100%" src="static/images/Overview.jpg">
       <!--/ Model. -->
 
   </div>
