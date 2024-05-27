@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,45 +42,6 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
 
 
 <section class="hero">
@@ -125,23 +86,6 @@
     </div>
   </div>
 </section>
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
 
 
 
@@ -193,38 +137,42 @@
 <section class="section" id="Results">
   <div class="container is-max-desktop content">
       <h2 class="title">Results</h2>
-  </div>
-  <!--  </section>-->
-
-  <!--<section class="section">-->
-    <div style="text-align: center;">
-      <p><strong>Query</strong>: <em>a giraffe in between two other giraffes.</em></p>
-      <div style="display: flex; justify-content: space-between;">
-          <div style="width: 47%;">
-              <img src="static/images/a giraffe in between two other giraffes1.jpg" style="width: 100%;">
-              <p>(a) Grounding DINO</p>
+      <div id="main" style="width: 1100px; margin: 0 auto;">
+          <div class="box">
+              <div class="pic">
+                  <p><strong>Query</strong>: <em>a giraffe in between two other giraffes.</em></p>
+                  <div style="display: flex; justify-content: space-between;">
+                      <div style="width: 47%;">
+                          <img src="Styles/figures/a giraffe in between two other giraffes1.jpg" style="width: 100%;">
+                          <p>(a) Grounding DINO</p>
+                      </div>
+                      <div style="width: 47%;">
+                          <img src="Styles/figures/a giraffe in between two other giraffes.jpg" style="width: 100%;">
+                          <p>(b) LLM-Optic</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div style="width: 47%;">
-              <img src="static/images/a giraffe in between two other giraffes.jpg" style="width: 100%;">
-              <p>(b) LLM-Optic</p>
+
+          <div class="box">
+              <div class="pic">
+                  <p><strong>Query</strong>: <em>a guy in a red shirt and jeans on top of a brown horse.</em></p>
+                  <div style="display: flex; justify-content: space-between;">
+                      <div style="width: 47%;">
+                          <img src="Styles/figures/a guy in a red shirt and jeans on top of a brown horse.jpg" style="width: 100%;">
+                          <p>(a) Grounding DINO</p>
+                      </div>
+                      <div style="width: 47%;">
+                          <img src="Styles/figures/a guy in a red shirt and jeans on top of a brown horse_optic.jpg" style="width: 100%;">
+                          <p>(b) LLM-Optic</p>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
-  
-      <p><strong>Query</strong>: <em>a guy in a red shirt and jeans on top of a brown horse.</em></p>
-      <div style="display: flex; justify-content: space-between;">
-          <div style="width: 47%;">
-              <img src="static/images/a guy in a red shirt and jeans on top of a brown horse.jpg" style="width: 100%;">
-              <p>(a) Grounding DINO</p>
-          </div>
-          <div style="width: 47%;">
-              <img src="static/images/a guy in a red shirt and jeans on top of a brown horse_optic.jpg" style="width: 100%;">
-              <p>(b) LLM-Optic</p>
-          </div>
-      </div>
   </div>
-  
-
 </section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -252,10 +200,6 @@
           This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
           under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
           Commons Attribution-ShareAlike 4.0 International License</a>.
-      </p>
-      <p>
-          We thank the LLaMA team for granting us access to their models and open-source projects, such as Vicuna and
-          MiniGPT-4.
       </p>
   </div>
 </section>
